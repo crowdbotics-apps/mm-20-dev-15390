@@ -28,7 +28,6 @@ export default class Blank extends React.Component {
   render = () => (
     <View>
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         style={styles.Switch_2}
         value={this.state.Switch_2}
         onValueChange={nextChecked => this.setState({ Switch_2: nextChecked })}
@@ -39,13 +38,12 @@ export default class Blank extends React.Component {
         value={this.state.TextInput_4}
         onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
       />
-      <Icon name="star" style={styles.Icon_5} />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
         style={styles.Switch_6}
         value={this.state.Switch_6}
         onValueChange={nextChecked => this.setState({ Switch_6: nextChecked })}
       />
+      <Icon name="star" style={styles.Icon_5} />
     </View>
   )
 }
@@ -54,6 +52,46 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginHorizontal: 16
+  },
+
+  View_1: {},
+  Switch_2: {
+    width: 50,
+    height: 50,
+    alignSelf: "flex-start",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3
+  },
+
+  Icon_3: {
+    width: 50,
+    height: 50,
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3
+  },
+
+  TextInput_4: {},
+  Icon_5: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3
+  },
+
+  Switch_6: {
+    alignSelf: "flex-start",
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3
   },
   View_1: {},
   Switch_2: {
@@ -73,16 +111,10 @@ const styles = StyleSheet.create({
     borderLeftWidth: 3,
     borderRightWidth: 3,
     borderTopWidth: 3,
-    borderBottomWidth: 3
+    borderBottomWidth: 3,
+    backgroundColor: "#b67272"
   },
   TextInput_4: {},
-  Icon_5: {
-    borderWidth: 3,
-    borderLeftWidth: 3,
-    borderRightWidth: 3,
-    borderTopWidth: 3,
-    borderBottomWidth: 3
-  },
   Switch_6: {
     alignSelf: "flex-start",
     borderWidth: 3,
@@ -90,5 +122,13 @@ const styles = StyleSheet.create({
     borderRightWidth: 3,
     borderTopWidth: 3,
     borderBottomWidth: 3
+  },
+  Icon_5: {
+    borderWidth: 3,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
+    borderTopWidth: 3,
+    borderBottomWidth: 3,
+    backgroundColor: "#b5ca16"
   }
 })
